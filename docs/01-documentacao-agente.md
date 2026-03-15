@@ -50,8 +50,19 @@ Aprendizado contínuo e métricas
 ### Público-Alvo
 > Quem vai usar esse agente?
 
-clientes do banco (primários) e equipes internas; Canais: app, web e plataformas de mensagens; Requisitos: autenticação, consentimento, persistência de contexto e escalonamento humano para casos de alto risco.
+O agente é destinado principalmente a clientes de instituições financeiras, que podem utilizar o assistente para verificar mensagens, documentos e solicitações financeiras suspeitas. Também pode ser utilizado por equipes internas de segurança e atendimento, auxiliando na triagem de possíveis casos de fraude.
 
+Canais de uso:
+-Aplicativo do banco
+-Plataforma web
+-Sistemas de atendimento
+-Plataformas de mensagens
+
+Requisitos principais:
+-Autenticação do usuário
+-Consentimento para análise de dados
+-Persistência de contexto das interações
+-Escalonamento para equipe humana em casos críticos
 
 ---
 
@@ -145,4 +156,4 @@ flowchart TD
 - [Não garante 100% de detecção — pode haver falsos negativos/positivos; é uma ferramenta de apoio, não uma solução infalível]
 - [Não realiza ações em sistemas externos sem autenticação humana — mudanças críticas (bloqueio de conta, estorno) exigem confirmação/ação de operador autorizado]
 - [Não armazena dados para treino sem anonimização — dados sensíveis não são usados para fine‑tuning sem remoção/mascaramento e autorização legal]
-- [Não promete privacidade absoluta — opera com medidas de segurança, mas sujeita-se a limites técnicos e políticas de retenção; riscos residuais existem]
+- [Não substitui sistemas antifraude bancários completos - O agente atua como ferramenta de apoio e orientação ao usuário, não substituindo sistemas institucionais de monitoramento antifraude utilizados por instituições financeiras]
