@@ -92,21 +92,22 @@ Guardião
 
 ```mermaid
 flowchart TD
-  A[Cliente] -->|Mensagem / Anexo| B[Canal]
-  B --> C[Gateway Segurança]
-  C --> D[Orquestrador]
-  D --> E[OCR / NER]
-  D --> F[Módulo Detecção (Regras e ML)]
-  D --> G[LLM Conversacional]
-  F -->|risk_score| H{Avaliação}
-  G --> H
-  H -->|baixo| I[Resposta Automática]
-  H -->|médio| J[Alerta + Monitoramento]
-  H -->|alto| K[Escalonamento Humano]
-  K --> L[Analista]
-  D --> M[Conectores Sistemas Internos]
-  D --> N[Logs e Auditoria]
-  N --> O[Armazenamento Seguro]
+  Cliente --> Mensagem[Mensagem ou Anexo]
+  Mensagem --> Canal[Canal]
+  Canal --> Gateway[Gateway de Segurança]
+  Gateway --> Orquestrador[Orquestrador]
+  Orquestrador --> OCR[OCR e NER]
+  Orquestrador --> Detecao[Detecção Regras e ML]
+  Orquestrador --> LLM[LLM Conversacional]
+  Detecao --> Avaliacao{Avaliação de Risco}
+  LLM --> Avaliacao
+  Avaliacao --> Baixo[Resposta Automática]
+  Avaliacao --> Medio[Alerta e Monitoramento]
+  Avaliacao --> Alto[Escalonamento Humano]
+  Alto --> Analista[Analista]
+  Orquestrador --> Conectores[Conectores Sistemas]
+  Orquestrador --> Logs[Logs e Auditoria]
+  Logs --> Storage[Armazenamento Seguro]
 
 ```
 
