@@ -10,6 +10,7 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 | `perfil_investidor.json` | JSON | Personalizar recomendações |
 | `produtos_financeiros.json` | JSON | Sugerir produtos adequados ao perfil |
 | `transacoes.csv` | CSV | Analisar padrão de gastos do cliente |
+|`https://huggingface.co/api/resolvecache/models/TFOA2/automatic_fraude_detection/05c9735b5a8c9ff4b206957e5c4224f10a08bbac/.gitattributes?%2FTFOA2%2Fautomatic_fraude_detection%2Fresolve%2Fmain%2F.gitattributes=&etag=%22a6344aac8c09253b3b630fb776ae94478aa0275b%22` | CSV | |
 
 > [!TIP]
 > **Quer um dataset mais robusto?** Você pode utilizar datasets públicos do [Hugging Face](https://huggingface.co/datasets) relacionados a finanças, desde que sejam adequados ao contexto do desafio.
