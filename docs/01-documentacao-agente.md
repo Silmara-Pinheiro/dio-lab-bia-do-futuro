@@ -92,11 +92,11 @@ Guardião
 
 ```mermaid
 flowchart TD
-  A[Cliente] -->|Mensagem / Anexo| B[Canal]
+ A[Cliente] -->|Mensagem / Anexo| B[Canal]
   B --> C[Gateway Segurança]
   C --> D[Orquestrador]
   D --> E[OCR / NER]
-  D --> F[Módulo Detecção (Regras + ML)]
+  D --> F[Módulo Detecção (Regras e ML)]
   D --> G[LLM Conversacional]
   F -->|risk_score| H{Avaliação}
   G --> H
