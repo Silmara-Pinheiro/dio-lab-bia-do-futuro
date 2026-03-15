@@ -92,7 +92,7 @@ Guardião
 
 ```mermaid
 flowchart TD
- A[Cliente] -->|Mensagem / Anexo| B[Canal]
+  A[Cliente] -->|Mensagem / Anexo| B[Canal]
   B --> C[Gateway Segurança]
   C --> D[Orquestrador]
   D --> E[OCR / NER]
