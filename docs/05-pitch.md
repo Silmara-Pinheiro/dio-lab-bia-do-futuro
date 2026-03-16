@@ -56,4 +56,4 @@ Além disso, o sistema pode evoluir continuamente com novos dados e feedback dos
 
 > Cole aqui o link do seu pitch (YouTube, Loom, Google Drive, etc.)
 
-[Link do vídeo]
+https://notebooklm.google.com/notebook/dc54ef7d-b260-4884-943a-52d2190bb5a5?authuser=1
